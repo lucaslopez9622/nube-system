@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    height: 100%;
+}
+  
+footer {
+    background-color:#000000;;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .item-termino{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    cursor:pointer;
+  }
+
+header {
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    position: relative;
+}
+
+.fondoimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+    display: block;
+}
+
+@keyframes typing{
+  from {width: 0}
+  to {width: 100%;}
+}
+@keyframes blink{
+    50%{border-color: transparent}
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff;
+  }
+  50% {
+    text-shadow: 0 0 16px #00ffff, 0 0 32px #00ffff;
+  }
+  100% {
+    text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff;
+  }
+}
+
+.Productos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  
+.products {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+  }
+@media (min-width: 1025px) and (max-width: 1440px) {
+ header {
+    height: 50vh;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 30vh;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    height: 20vh;
+  }
+
+  .fondoimg {
+    object-position: top center; 
+  }
+}

@@ -1,0 +1,66 @@
+.nav-bar {
+    background-color: black;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    gap: 2px;
+}
+.item {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+    margin-top: 8px;
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #00bfff;
+    transition: width 0.3s ease;
+}
+
+.item:hover::after {
+    width: 100%;
+}
+
+.item:hover {
+    color: #00bfff;
+}
+
+.icono-carrito {
+    width: 25px;
+    height: 25px;
+    margin-top: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.contador { 
+    position: absolute;
+    top: 15px;
+    right:20px;
+    color: white;
+    margin-top: -12px;
+    border-radius: 50%;
+    font-size: 13px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

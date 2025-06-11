@@ -1,0 +1,140 @@
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.producto {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 160px;
+  object-fit: contain;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+}
+
+.producto-detalle {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.producto h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  color: #222;
+  margin: 0;
+  text-align: center;
+}
+
+.producto p {
+  font-size: 16px;
+  color: #575757;
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.precio {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e66ff;
+}
+
+.btn-prod {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.btn-agregar-producto, .btn-info-producto {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  min-width: 110px;
+}
+
+.btn-agregar-producto {
+  background-color: #007bff;
+}
+
+.btn-agregar-producto:hover {
+  background-color: #007bffdd;
+}
+
+.btn-info-producto {
+  background-color: #28a745;
+}
+
+.btn-info-producto:hover {
+  background-color: #28a746e2;
+
+}
+
+.cargando {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  gap: 8px;
+}
+
+.paginacion button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.paginacion button.activo {
+  background-color: #0056b3;
+}

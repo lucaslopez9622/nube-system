@@ -1,0 +1,38 @@
+.terminos-container{
+    margin-top: 1rem;
+}
+
+.titulo {
+    padding: 1rem;
+    background: linear-gradient(90deg, #0f0c29, #302b63, #e80f83);
+    background-size: 200% 200%;
+    animation: rgbAnimation 10s ease infinite;
+    color: white;
+    border-radius: 12px;
+    text-align: center ;
+}
+
+.condiciones-container{
+    padding: 2rem;
+}
+
+.condiciones-container h2{
+    background-image: url('../assets/fondoweb1.jpg');
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    border: solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.condiciones-container p{
+max-width: 800px;
+  margin: 0 auto 1rem auto; 
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #2c2c2c; 
+}
